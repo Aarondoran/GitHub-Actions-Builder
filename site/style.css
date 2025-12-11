@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, select, button {
+  display: block;
+  width: 100%;
+  margin: 5px 0 15px 0;
+  padding: 8px;
+  font-size: 1em;
+}
+
+button {
+  cursor: pointer;
+  background: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #024f9d;
+}
+
+textarea {
+  height: 200px;
+  font-family: monospace;
+}
+.job, .step {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: #fafafa;
+}
