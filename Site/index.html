@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual GitHub Actions Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Visual GitHub Actions Editor</h1>
+
+    <label>
+      Workflow Name:
+      <input type="text" id="workflow-name" placeholder="CI Pipeline">
+    </label>
+
+    <h2>Jobs</h2>
+    <div id="jobs-container"></div>
+    <button id="add-job">Add Job</button>
+
+    <button id="generate">Generate YAML</button>
+
+    <h2>Generated YAML</h2>
+    <textarea id="yaml-output" readonly></textarea>
+    <button id="download-yaml">Download YAML</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
