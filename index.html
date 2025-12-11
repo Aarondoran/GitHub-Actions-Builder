@@ -15,9 +15,13 @@
       <input type="text" id="workflow-name" placeholder="CI Pipeline">
     </label>
 
-    <h2>Jobs</h2>
+    <h2>Add Pre-Made Jobs</h2>
+    <button class="template-btn" data-template="node-ci">Add Node.js CI</button>
+    <button class="template-btn" data-template="python-ci">Add Python CI</button>
+    <button class="template-btn" data-template="deploy-gh-pages">Add Deploy to GitHub Pages</button>
+
+    <h2>Jobs in Workflow</h2>
     <div id="jobs-container"></div>
-    <button id="add-job">Add Job</button>
 
     <button id="generate">Generate YAML</button>
 
