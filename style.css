@@ -1,24 +1,61 @@
 body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
+  margin: 0;
   padding: 20px;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 20px;
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  background: #e0e0e0;
+  padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: fit-content;
 }
 
-input, textarea, select, button {
-  display: block;
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.action {
+  background: #0366d6;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: grab;
+  text-align: center;
+}
+
+.canvas {
+  flex-grow: 1;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.job {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+textarea {
   width: 100%;
-  margin: 5px 0 15px 0;
-  padding: 8px;
-  font-size: 1em;
+  height: 250px;
+  font-family: monospace;
+  margin-top: 10px;
 }
 
 button {
@@ -27,21 +64,10 @@ button {
   color: white;
   border: none;
   border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 button:hover {
   background: #024f9d;
-}
-
-textarea {
-  height: 250px;
-  font-family: monospace;
-}
-
-.job {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 6px;
-  background: #fafafa;
 }
